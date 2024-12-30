@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+    background: #fff;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+#mobile-imag{
+    width: 100%;
+}
+
+.card{
+    justify-content: center;
+    align-content: center;
+}
+
+.right-side img{
+    display: none;
+}
+.register{
+    width: 100%;
+    background: #fff;
+    font-size: 1rem;
+   
+}
+.left-side{
+    justify-content: center;
+    align-content: center;
+    padding: 1.5rem;
+    color: #413d3d;
+    width: 100%;
+}  
+.left-side h1{
+    margin-bottom: 1rem;
+}
+.left-side p{
+    margin-bottom: 1.5rem ;
+}
+.left-side li{
+    line-height: 1rem;
+    list-style-image:url(image/icon-list.svg);
+    margin-left:  1.5rem;
+    font-size: 1rem;
+}
+.left-side #email{
+    color: #000;
+    margin-bottom: 1rem;
+    padding:  0.8rem;
+    border-radius: 10px;
+    width: 90%;
+    background-color: transparent;
+    border: solid 1px gray;
+}
+
+
+.left-side #email:hover{
+    border: solid 2px #141414;
+}
+.left-side #submit, .success-message #DismissBtn{
+    padding:  0.8rem;
+    border-radius: 10px;
+    width: 90%;
+    background-color: #131c2e;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.left-side #submit:hover, .success-message #DismissBtn:hover{
+    background: linear-gradient(45deg, #db596f, #dda336);
+}
+.success-message{
+padding: 1rem;
+padding-top: 6rem;
+width: 100%;
+color: #131c2e;
+display: none;
+ 
+}
+.success-message img{
+ margin-bottom: 1.3rem;
+ margin:  1rem;
+}
+.success-message h1{
+    margin-bottom: 1.3rem;
+    margin:  1rem;
+}
+
+.success-message p{
+    margin-bottom: 1.3rem;
+    margin:  1rem;
+}
+
+.success-message #DismissBtn{
+    margin-top: 9rem;
+    margin-left: 1rem;
+}
+
+.email-error {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+ 
+ .email-error p{
+    color: red;
+    display: none;
+ }
+@media screen and (min-width: 1024px){
+    
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: #2b2929;
+    }
+    
+    #mobile-imag{
+        display: none;
+    }
+    .register{
+        display: flex;
+        margin: 2rem;
+        justify-content: center;
+        align-content: center;
+        width: 900px;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 20px;
+        border: 0;
+    }
+ 
+    .card img{
+        height: 100%;
+        
+    
+    }
+    .left-side{
+        flex-basis: 60%;
+        justify-content: center;
+        align-content: center;
+        padding: 1rem;
+        color: #413d3d;
+        font-size: 1.1;
+    }
+    
+    .left-side p{
+        margin: 1rem  auto;
+    }
+    .left-side li{
+        line-height: 2rem;
+        list-style-image:url(image/icon-list.svg);
+        margin-left:  1rem;
+        font-size: 1.1;
+    }
+    
+    .left-side input{
+        margin-bottom: 1rem;
+        padding:  0.8rem;
+        border-radius: 10px;
+        width: 90%;
+        background-color: transparent;
+        border: solid 1px gray;
+        color: #fff;
+    }
+    .left-side input:hover{
+        border: solid 2px #141414;
+    }
+    .left-side button{
+        padding:  0.8rem;
+        border-radius: 10px;
+        width: 90%;
+        background-color: #272626;
+        color: #fff;
+        border: 0;
+        outline: 0;
+    }
+    .left-side button:hover{
+        background: linear-gradient(45deg, #db596f, #dda336);
+    }
+    
+  
+    .left-side h1{
+     font-size: 2rem;
+     margin-bottom: 1rem;
+     color: #272626;
+    }
+
+    .right-side{
+        flex-basis: 40%;
+    }
+     
+    .right-side img{
+        display: flex;
+    }
+
+    .success-message{
+        max-width: 300px;
+        background-color: #fff;
+        padding:  1.3rem;
+        border-radius: 25px;
+    }
+    .success-message p{
+        font-size: 0.9rem;
+    }
+     .success-message h1, .success-message p,.success-message #DismissBtn{
+        width:  100%;
+        margin-top:1.3rem;
+        margin-left: 0;
+    }
+   
+}
