@@ -45,7 +45,7 @@
 }
 .left-side li{
     line-height: 1rem;
-    list-style-image:url(image/icon-list.svg);
+    list-style-image:url(icon-list.svg);
     margin-left:  1.5rem;
     font-size: 1rem;
 }
