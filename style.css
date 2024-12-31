@@ -115,6 +115,9 @@ display: none;
     color: red;
     display: none;
  }
+ #user-email{
+    font-weight: bold;
+ }
 @media screen and (min-width: 1024px){
     
     .container{
