@@ -5,6 +5,7 @@ const email = document.getElementById("email");
 const submitBtn = document.getElementById("submit");
 const successMsg = document.querySelector(".success-message");
 const DismissBtn = document.getElementById("DismissBtn");
+const userEmail = document.getElementById('user-email');
 
 function validateEmail() {
     const emailValue = document.getElementById("email").value;
@@ -28,6 +29,8 @@ function validateEmail() {
        errorMsg.style.display = 'block'
     }
     else{
+          let userEmail = document.getElementById('user-email');
+        userEmail.innerHTML = email.value;
        mobileImg.style.display = 'none'
         register.style.display = 'none'
     successMsg.style.display = 'block'
